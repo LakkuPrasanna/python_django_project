@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% block title %}
+login
+{% endblock title%}
+{% block content%}
+<html>
+    <body>
+        <input placeholder="enter username">
+        <input placeholdr="enter password">
+        <a href="{% url 'index'%}">back</a>
+        <button>Login</button>
+    </body>
+</html>
+{% endblock content%}
