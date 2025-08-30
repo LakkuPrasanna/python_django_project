@@ -1,0 +1,48 @@
+body{
+            margin:0;
+            padding:0;
+           
+        }
+        .main{
+            background-color: midnightblue;
+            height:30px;
+            width:100%;
+            
+            
+        }
+        .nav-items a{
+            text-decoration: none;
+            color:white;
+        }
+        .nav-items{
+            list-style:none;
+            display:flex;
+            align-items: center;
+        }
+        .nav-items li{
+            margin-right: 20px;
+        }
+        .footer-bar{
+            /* position:fixed;
+            bottom:0px; */
+            display:flex;
+            width:100%;
+            height:40px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content: center;
+            background-color:orange;
+        }
+.btn-readmore{
+    background-color:black;
+    color:aqua;
+    border: unset;
+    border-radius: 8px;
+    padding:8px 15px;
+    margin:5px;
+}
+.action-icons{
+    margin-left:5px;
+    cursor:pointer;
+}
