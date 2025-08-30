@@ -1,8 +1,11 @@
 from django.shortcuts import render
-
+from admissions.models import Admission
 # Create your views here.
 def home(request):
-    return render(request,'home.html',{})
+    # return render(request,'home.html',{})
+    data=Admission.objects.all()
+    res=render(request,'home.html',{'data':data})
+    return res
 def index(request):
     return render(request,'index.html',{})
 def products(request):

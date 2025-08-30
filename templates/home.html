@@ -25,4 +25,29 @@
   </a>
 </div>
 <a href="{% url 'index'%}">back</a>
+<div>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Father</th>
+      <th scope="col">joindate</th>
+      <th scope="col">stu_class</th>
+      <th scope="col">fees</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for rec in data %}
+  
+    <tr>
+      <th scope="row">{{rec.stu_name}}</th>
+      <td>{{rec.stu_father}}</td>
+      <td>{{rec.joindate}}</td>
+      <td>{{rec.stu_class}}</td>
+      <td>{{rec.fees}}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
 {% endblock content%}
